@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +14,7 @@
     <?php for ($i = 1; $i <= 5; $i++) : ?>
         <tr>
             <?php for ($j = 1; $j <= 5; $j++) : ?>
-                <td style="background-color: <?= ($j % 2 == 0) ? 'red' : 'blue'; ?>; color: white;">
+                <td style="background-color: <?= ($j % 2 == 0) ? 'purple' : 'aqua'; ?>; color: white;">
                     <?= "$i,$j"; ?>
                 </td>
             <?php endfor; ?>
