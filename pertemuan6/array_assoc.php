@@ -28,6 +28,12 @@ $animes = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        li img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
     
@@ -37,8 +43,10 @@ $animes = [
                 <img src="img/<?= $anime["cover"]; ?>" alt="">
             </li>
             <li>Judul : <?= $anime["judul"]; ?></li>
+            
             <?php foreach($anime["genre"] as $genre) : ?>
                 <li>Genre : <a href=""><?= $genre; ?></a></li>
+
             <?php endforeach; ?>
             <li>Studio : <?= $anime["studio"]; ?></li>
             <li>Tahun : <?= $anime["tahun"]; ?></li>
